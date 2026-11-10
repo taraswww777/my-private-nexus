@@ -13,3 +13,5 @@ services:
     environment:
       # Опционально: настройка памяти JVM (под ваш объём кеша)
       - INSTALL4J_ADD_VM_PARAMS=-Xms1g -Xmx2g -XX:MaxDirectMemorySize=2g
+    env_file:
+      - .env
