@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "docker compose up -d"
+    "start": "docker compose up -d",
+    "init-nexus": "docker exec -it nexus bash -c \"cd /scripts && ./init-nexus.sh\"\n"
   },
   "repository": {
     "type": "git",
